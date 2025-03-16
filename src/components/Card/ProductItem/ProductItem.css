@@ -1,0 +1,90 @@
+.box-item {
+    padding: 10px;
+    max-width: 650px;
+    max-height: 450px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    border: 1px solid #44444444;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.box-item:hover {
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.box-item > img {
+    width: 200px;
+    height: 250px;
+}
+
+.box-item-header {
+    display: flex;
+    column-gap: 5px;
+}
+
+.box-item-header > h2 {
+    max-width: 80px;
+    color: red;
+}
+
+.box-item-header > button {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: rgb(3, 37, 65);
+    cursor: pointer;
+}
+
+.box-item-header > span {
+    font-size: 25px;
+}
+
+.box-item-info {
+    display: flex;
+}
+
+.box-item-info > h3, p {
+    max-width: 100px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+
+.box-item-info > p {
+    font-size: 18px;
+    color: #444444;
+}
+
+.box-item-footer {
+    display: flex;
+}
+
+.box-item-footer > span {
+    font-size: 18px;
+}
+
+.box-item-footer > span:nth-child(2) {
+    color: #444444;
+}
+
+.box-item > button {
+    margin: 0 auto;
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    background-color: rgb(3, 37, 65);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.box-item > button:hover {
+    background-color: rgb(5, 104, 197);
+}

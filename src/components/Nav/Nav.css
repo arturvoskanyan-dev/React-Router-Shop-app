@@ -1,0 +1,40 @@
+nav {
+    background-color: rgb(3, 37, 65);
+    color: #ffff;
+    position: fixed;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    align-items: center;
+}
+
+.nav-logo > h1 {
+    color: aqua;
+    cursor: pointer;
+}
+
+.nav-search {
+    width: 400px; 
+}
+
+.nav-search > input {
+    max-width: 300px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.nav-search > img {
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-search {
+        display: none;
+    }
+}
