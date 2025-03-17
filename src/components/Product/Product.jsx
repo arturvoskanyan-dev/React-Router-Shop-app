@@ -20,15 +20,17 @@ const Product = ({ data }) => {
                     <div className={style.product_rating}>
                         <span>
                             <img src={star} />
-                            {newData.rating.rate}.
-                            {newData.rating.count}
+                            <span>{newData.rating.rate} from </span>
+                            <span> {newData.rating.count} reviews</span>
                         </span>
+                    </div>
+                    <div className={style.product_price}>
+                        <h2>{newData.price}$</h2>
                     </div>
                     <div className={style.product_description}>
                         <p>{newData.description}</p>
                     </div>
-                    <div className={style.product_price}>
-                        <h2>{newData.price}$</h2>
+                    <div className={style.product_btn}>
                         <button>Buy</button>
                     </div>
                 </section>

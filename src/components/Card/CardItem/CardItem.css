@@ -11,10 +11,6 @@
     transition: 0.3s;
 }
 
-.active {
-    color: blue;
-}
-
 .box-item:hover {
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.15);
 }

@@ -1,5 +1,5 @@
 import { useState } from "react"
-import ProductItem from "./ProductItem/ProductItem"
+import CardItem from "./CardItem/CardItem"
 import style from "./Card.module.css"
 
 export default function Card({ data }) {
@@ -34,7 +34,7 @@ export default function Card({ data }) {
     }
 
     return items.map((elem, index) => (
-        <ProductItem
+        <CardItem
             key={index}
             id={elem.id}
             image={elem.image}

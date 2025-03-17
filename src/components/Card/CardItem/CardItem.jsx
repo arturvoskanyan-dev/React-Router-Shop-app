@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom"
 import star from "../../../assets/star.png"
-import "./ProductItem.css"
+import "./CardItem.css"
 
-export default function ProductItem(props) {
+export default function CardItem(props) {
   const {image, title, count, price, index, onPlus, onMinus, rate, ratingCount, category, id} = props
   return (
     <section className="box-item" key={index}>
