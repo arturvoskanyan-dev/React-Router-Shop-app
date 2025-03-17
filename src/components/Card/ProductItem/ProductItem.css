@@ -11,11 +11,15 @@
     transition: 0.3s;
 }
 
+.active {
+    color: blue;
+}
+
 .box-item:hover {
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.15);
 }
 
-.box-item > img {
+.product-img {
     width: 200px;
     height: 250px;
 }
@@ -49,7 +53,7 @@
     display: flex;
 }
 
-.box-item-info > h3, p {
+.box-item-info > h3, .box-item-info > p {
     max-width: 100px;
     text-overflow: ellipsis;
     overflow: hidden;

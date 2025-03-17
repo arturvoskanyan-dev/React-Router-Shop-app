@@ -36,6 +36,7 @@ export default function Card({ data }) {
     return items.map((elem, index) => (
         <ProductItem
             key={index}
+            id={elem.id}
             image={elem.image}
             title={elem.title}
             price={elem.price}

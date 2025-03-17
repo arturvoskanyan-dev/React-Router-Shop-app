@@ -9,5 +9,6 @@ import NotFound from './NotFound/NotFound';
 import Womens from './Womens/Womens';
 import Jewelery from './Jewelery/Jewelery';
 import { Outlet } from 'react-router-dom';
+import Product from './Product/Product';
 
-export {Nav, Layout, Home, Electronics, Mens, NotFound, Womens, Jewelery, Outlet}
+export {Nav, Layout, Home, Electronics, Mens, NotFound, Womens, Jewelery, Outlet, Product}
