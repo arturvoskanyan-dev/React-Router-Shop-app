@@ -1,7 +1,4 @@
-import { useParams } from "react-router-dom";
-import Buy from "../Buy/Buy";
-import React from 'react'
-import star from "../../assets/star.png"
+import {useParams, Buy, star} from "../index"
 import style from "./Product.module.css"
 
 const Product = ({ data }) => {
@@ -32,7 +29,7 @@ const Product = ({ data }) => {
                         <p>{newData.description}</p>
                     </div>
                     <div className={style.product_btn}>
-                        <Buy newData={[newData]} />
+                        <Buy newData={[newData].map((elem) => ({...elem, count : 1}))} />
                     </div>
                 </section>
             </div>

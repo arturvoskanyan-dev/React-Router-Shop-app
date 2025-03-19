@@ -1,9 +1,5 @@
-import NavItem from "./NavItem/NavItem"
-import { IoSearchSharp } from "react-icons/io5";
-import { SlBasket } from "react-icons/sl";
-import search from "../../assets/search.png"
+import {NavItem, IoSearchSharp, SlBasket, NavLink} from "../index"
 import "./Nav.css"
-import { NavLink } from "react-router-dom";
 
 export default function Nav({nav}) {
     return (
@@ -17,7 +13,6 @@ export default function Nav({nav}) {
             
             <div className="nav-search">
                 <input type="text" />
-                {/* <img src={search} /> */}
                 <IoSearchSharp className="search"/>
             </div>
             <div className="nav-basket">

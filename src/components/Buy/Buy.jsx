@@ -1,4 +1,4 @@
-const Buy = ({newData}) => {
+const Buy = ({ newData }) => {
     const buy = () => {
         let basketData = JSON.parse(localStorage.getItem("data")) || [];
         let updateData = [...basketData, ...newData].filter((elem, index, arr) => {
@@ -6,11 +6,11 @@ const Buy = ({newData}) => {
         })
         localStorage.setItem("data", JSON.stringify(updateData));
     }
-  return (
-    <>
-        <button onClick={() => buy()}>Buy</button>
-    </>
-  )
+    return (
+        <>
+            <button onClick={() => buy()}>Buy</button>
+        </>
+    )
 }
 
 export default Buy

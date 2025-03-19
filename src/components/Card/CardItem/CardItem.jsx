@@ -1,7 +1,5 @@
-import { NavLink } from "react-router-dom"
-import star from "../../../assets/star.png"
+import { NavLink, Buy, star} from "../../index"
 import "./CardItem.css"
-import Buy from "../../Buy/Buy"
 
 export default function CardItem(props) {
   const { image, title, count, price, index, onPlus, onMinus, rate, ratingCount, category, id } = props
