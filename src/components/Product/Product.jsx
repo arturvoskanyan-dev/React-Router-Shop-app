@@ -1,11 +1,12 @@
 import { useParams } from "react-router-dom";
+import Buy from "../Buy/Buy";
 import React from 'react'
 import star from "../../assets/star.png"
 import style from "./Product.module.css"
 
 const Product = ({ data }) => {
     const { id } = useParams()
-    const newData = data.find((elem) => elem.id == id)
+    const newData = data.find((elem) => elem.id === +id)
 
     return (
         <div className={style.product_box}>
@@ -31,7 +32,7 @@ const Product = ({ data }) => {
                         <p>{newData.description}</p>
                     </div>
                     <div className={style.product_btn}>
-                        <button>Buy</button>
+                        <Buy newData={[newData]} />
                     </div>
                 </section>
             </div>

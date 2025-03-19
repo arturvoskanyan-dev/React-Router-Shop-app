@@ -1,9 +1,7 @@
 import { useState } from "react"
 import CardItem from "./CardItem/CardItem"
-import style from "./Card.module.css"
 
 export default function Card({ data }) {
-
     const [items, setItems] = useState(
         data.map((elem) => ({
             ...elem,
@@ -11,7 +9,7 @@ export default function Card({ data }) {
         }))
     )
 
-    function plus(index) {
+    const plus = (index) => {
         setItems((prevItems) =>
             prevItems.map((elem, i) =>
                 i === index ? {
@@ -22,7 +20,7 @@ export default function Card({ data }) {
         )
     }
 
-    function minus(index) {
+    const minus = (index) => {
         setItems((prevItems) =>
             prevItems.map((elem, i) =>
                 i === index && elem.count > 1 ? {

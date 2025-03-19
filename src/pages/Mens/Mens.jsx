@@ -1,4 +1,4 @@
-import Card from "../Card/Card";
+import Card from "../../components/Card/Card";
 import style from "./Mens.module.css"
 
 const Mens = ({ data }) => {

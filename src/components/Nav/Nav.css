@@ -28,8 +28,20 @@ nav {
     border-radius: 12px;
 }
 
-.nav-search > img {
+/* .nav-search > img {
     vertical-align: middle;
+    cursor: pointer;
+} */
+.nav-search > svg {
+    font-size: 28px;
+    color: aqua;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.basket {
+    font-size: 26px;
+    color: aqua;
     cursor: pointer;
 }
 
